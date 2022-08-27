@@ -20,26 +20,13 @@ class Producto {
         this.cantidad = 0;
 
     }
-    // get cantidad(){
-    //     cant = Number(prompt("Dime cuantas unidades quieres: "));
-    // }
+
 
     ValorFinal(){
         return this.precio * this.cantidad;
     }
 
 }
-    // function cantidadProducto (cantidad){
-    //     this.cantidad = cantidad;
-    //     console.log(`Quieres ${this.cantidad} unidades.`)
-
-        
-    // }
-    // function ValorFinal(){
-    //     ValorFinal = this.precio * this.cantidad;
-    //     console.log(`El valor total es ${this.ValorFinal} por ${this.cantidad} unidades de ${this.nombre}`)
-    // }
-
 
 const producto1 = new Producto ("Pizza", 1200, "Pizza especial");
 const producto2 = new Producto ("Hamburguesa", 800, "Hamburguesa simple con fritas");
