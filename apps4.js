@@ -45,6 +45,11 @@ let option = prompt(`Elija una opcion:
 3: Lomito
 4: Sand. Milanesa
 5: No quiero nada.`);
+
+seleccionarOpcion();
+
+function seleccionarOpcion () {
+    
 switch (option) {
     case "1":
         console.log("Has seleccionado Pizza");     
@@ -64,14 +69,17 @@ switch (option) {
 
     default:
         console.log("No has iniciado una opción válida.");
-        let option = prompt(`Elija otra vez una opcion: 
-        1: Pizza
-        2: Hamburguesa
-        3: Lomito
-        4: Sand. Milanesa
-        5: No quiero nada.`);
+        option = prompt(`Elija otra opcion:
+1: Pizza
+2: Hamburguesa
+3: Lomito
+4: Sand. Milanesa
+5: No quiero nada.`); 
+        seleccionarOpcion();
         break;
 }
+}
+
 console.log(`Esta es la opción ${option}`);
 
 
